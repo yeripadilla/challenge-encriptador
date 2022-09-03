@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        
+        <header class="band">
+            <div class="container">
+                <img src="imagenes/logo.png.png" class="logo" alt="logo de alura">
+                <div class="header">
+                    <h1 class="title">Encriptador</h1>
+                    <p>Encripte sus textos para que sean ilegibles</p>
+                    
+                </div>
+            </div>
+        </header>
+        
+        <main class="container main">
+            <section class="text">
+                <p class="must">* Solo minúsculas sin acentos ni caracteres especiales</p>
+                <textarea class="input user" cols="25" rows="10" placeholder="Escriba su texto aquí"></textarea>
+                <div class="buttoncontainer">
+                    <button class="button encrypt" onclick="encrypt()">Encriptar</button>
+                    <button class="button decrypt" onclick="decrypt()">Desencriptar</button>
+                </div>
+            </section>
+            
+            <section class="text">
+                <textarea class="input textEncrypt" cols="25" rows="10"></textarea>
+                <div class="dollbox">
+                    <img src="imagenes/doll.png.png" class="doll" alt="muñeco buscando texto a encriptar">
+                    <p class="message">Aún no se ha encontrado un texto para encriptar o desencriptar.</p>
+                    <p>¡Por favor ingrese un texto!</p>
+                </div>
+                <div class="buttoncontainer">
+                    <button class="button copy" onclick="copy()">Copiar </button>
+                </div>
+            </section>
+        </main>
+        
+        <footer class="band">
+            <div class="container">
+                <img src="imagenes/onelogo.png" class="logofooter" alt="logo de oracle one education">
+                <p class="copyright">Yeri Padilla Oviedo</p>
+                <p class="copyright">&copy Alura-ONE</p>
+            </div>
+        </footer>
+        <script src="js/script.js"></script>
+    </body>
+    
+</html>
